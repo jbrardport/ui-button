@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .button {
+          border: none;
+          color: rgb(0, 255, 68);
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff403d;
+            color: rgb(76, 54, 183);
+        }
+        
+        .button1 {background-color: #4CAF50;} /* Green */
+        </style>
+    <body>
+        <button class=button button1, onclick="onClick()">Try it</button>
+        <script>
+            var clicks = 0;
+            function onClick() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+                };
+        </script>
+        <p>Clicks: <a id="clicks">0</a></p>
+    </body>
+</html>
